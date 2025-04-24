@@ -4,7 +4,6 @@ import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image } from 'rea
 
 export default function App() {
   const [activeIndex, setActiveIndex] = useState(null);
-
   const faqData = [
     'Dois-je payer pour récupérer un don ?',
     'Dois-je payer pour récupérer un don ?',
@@ -18,7 +17,6 @@ export default function App() {
   const toggleIndex = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
